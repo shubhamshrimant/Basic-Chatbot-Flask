@@ -7,6 +7,7 @@ Created on Tue Jun  1 14:49:06 2021
 
 from flask import Flask,render_template,request
 import ss2
+import requests
 app = Flask(__name__,template_folder='C:\\Users\\shubh\\chatbot\\templates')
 
 @app.route('/',methods=['GET','POST'])
@@ -19,4 +20,4 @@ def hello():
 
 
 if __name__ == '__main__':
-    app.run(debug=True,threaded=True)
+    app.run(threaded=True)
